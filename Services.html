@@ -23,38 +23,21 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
-                    </li>
+        <!-- navbar for home page -->
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="logo.png" alt="">
+            <a href="index.html">Home</a>
+            <a href="Services.html">Services</a>
+            <a href="Projects.html">Projects</a>
+            <a href="About.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-
-
-            </div>
-        </nav>
     </header>
     <div class="container5">
-
 
 
 
@@ -74,16 +57,7 @@
                 <div class="ex6">Coming Soon</div><br><br>
             </div>
         </div>
-        <!-- 6 img -->
-        <!-- <div class="larg">
-<div class="small">
-      <img class="img11" src="Screenshot_2024-12-19_145442-removebg-preview.png" alt="img11">
-<img class="img2" src="Screenshot_2024-12-19_145555-removebg-preview.png" alt="">
-<img class="img3" src="Screenshot_2024-12-19_145611-removebg-preview.png" alt="">
-<img class="img4" src="Screenshot_2024-12-19_145442-removebg-preview.png" alt="">
-<img class="img5" src="Screenshot_2024-12-19_145555-removebg-preview.png" alt="">
-<img class="img6" src="Screenshot_2024-12-19_145611-removebg-preview.png" alt=""> </div>
-</div> -->
+
         <!-- footer -->
         <div class="footer">
             <div class="flex">
@@ -101,11 +75,17 @@
 
 
     </div>
-    <!-- <input type="checkbox" id="theme-toggle">
-<label for="theme-toggle">Toggle Dark Mode</label> -->
 
-
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 
 </body>
